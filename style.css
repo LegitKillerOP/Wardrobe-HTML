@@ -1,0 +1,611 @@
+* {
+  margin: 0px;
+  padding: 0px;
+} 
+html {
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+}
+
+
+/*SCROLL BAR*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+/*NAVBAR*/
+.navbar {
+  background-color: #fff;
+  z-index: 1000;
+  width: 100%;
+  position:fixed;
+  top: 0px;
+  height: 80px;
+  display: flex;
+  transition: all 0.3s ease;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px;
+}
+.navbar .max-width{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar ul li a{
+  padding: 0px 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: .3px;
+  color: #090909;
+  line-height: 80px;
+  font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+}
+.navbar .logo a{
+  text-align: center;
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 50px;
+}
+.navbar .logo a span{
+    color: #999;
+    transition: all 0.3s ease;
+}
+.navbar .men-section-items{
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  width: 1050px;
+  height: 510px;
+  right: 1px;
+  left: 130px;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-bottom: 15px;
+  z-index: 10;
+  font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+.navbar .women-section-items{
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  width: 1050px;
+  height: 510px;
+  right: 1px;
+  left: 130px;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-bottom: 15px;
+  z-index: 10;
+  font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+.navbar .kids-section-items{
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  width: 1050px;
+  height: 510px;
+  right: 1px;
+  left: 130px;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-bottom: 15px;
+  z-index: 10;
+  font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+.navbar .home-section-items{
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  width: 1050px;
+  right: 1px;
+  left: 130px;
+  height: 510px;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-bottom:15px;
+  z-index: 10;
+  font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+.navbar .beauty-section-items{
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  width: 1050px;
+  height:510px;
+  right: 1px;
+  left: 130px;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-bottom: 15px;
+  z-index: 10;
+  font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+.navbar input {
+  font-size: 14px;
+  height: 20px;
+  line-height: 24px;
+  width: 30%;
+  color: #696e79;
+  padding: 10px;
+  outline: 0;
+  border: 1px solid #f5f5f6;
+  border-radius: 4px 4px 4px 4px;
+  background: #f5f5f6;
+}
+.menu-btn{
+    color: #000;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/*SLIDESHOW*/
+.slideshow .slideshow-container {
+  padding-top: 30px;
+  max-width: 100%;
+  margin: auto;
+}
+.slideshow .dot {
+  height: 8px;
+  width: 8px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.slideshow .active {
+  background-color: #717171;
+}
+.slideshow .fade img{
+  width: 100%;
+}
+.slideshow .fade {
+  margin-top: 80px;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+/*MENS SECTION*/
+.blockbuster-offer .offer img{
+  width: 590px;
+  height: 405px;
+}
+.mens-trending-accessories .text-banner-title,
+.mens-trending-sportwear .text-banner-title,
+.mens-trending-footwear .text-banner-title,
+.mens-categories .text-banner-title,
+.mens-indian-trending .text-banner-title,
+.global-brands .text-banner-title,
+.blockbuster-offer .text-banner-title {
+  border-bottom: 1px solid #3e4152;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.mens-trending-accessories .text-banner-title,
+.mens-trending-sportwear .text-banner-title,
+.mens-trending-footwear .text-banner-title,
+.mens-categories .text-banner-title,
+.mens-indian-trending .text-banner-title,
+.global-brands .text-banner-title,
+.blockbuster-offer .text-banner-title {
+  text-transform: uppercase;
+  color: #3e4152;
+  letter-spacing: .15em;
+  font-size: 1.8em;
+  margin: 50px 0 10px 30px;
+  max-height: 5em;
+  font-weight: 700;
+}
+.mens-categories,
+.mens-indian-trending,
+.mens-trending-footwear,
+.blockbuster-offer,
+.mens-trending-sportwear,
+.mens-trending-accessories,
+.global-brands {
+    text-align: center;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+.mens-trending-accessories .accessories img,
+.mens-trending-sportwear .sportwear img,
+.mens-trending-footwear .footwear img,
+.mens-indian-trending .indian-wear img,
+.mens-categories .categories img,
+.blockbuster-offer .offer img {
+  padding-left: 20px;
+  margin: 5px;
+}
+.mens-trending-accessories .accessories img:hover,
+.mens-trending-sportwear .sportwear img:hover,
+.mens-trending-footwear .footwear img:hover,
+.mens-indian-trending .indian-wear img:hover,
+.mens-categories .categories img:hover,
+.global-brands .brands img:hover,
+.blockbuster-offer .offer img:hover{
+  transform: scale(1.05);
+  transition: all 0.3s ease ;
+  cursor: pointer;
+}
+.global-brands .brands img {
+  padding-left: 10px;
+  margin-top: 10px;
+}
+
+
+/*WOMEN SECTION*/
+.women-categories .text-banner-title,
+.women-indianwear .text-banner-title,
+.women-westernwear .text-banner-title,
+.women-sportswear .text-banner-title,
+.women-accessories .text-banner-title,
+.women-deals .text-banner-title {
+  border-bottom: 1px solid #3e4152;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.women-categories .text-banner-title,
+.women-indianwear .text-banner-title,
+.women-westernwear .text-banner-title,
+.women-sportswear .text-banner-title,
+.women-accessories .text-banner-title,
+.women-deals .text-banner-title {
+  text-transform: uppercase;
+  color: #3e4152;
+  letter-spacing: .15em;
+  font-size: 1.8em;
+  margin: 50px 0 10px 30px;
+  max-height: 5em;
+  font-weight: 700;
+}
+.women-deals .deals img,
+.women-westernwear .western-wear img,
+.women-indianwear .indian-wear img,
+.women-sportswear .sportwear img,
+.women-accessories .accessories img,
+.women-categories .categories img {
+  padding-left: 20px;
+  margin: 5px;
+}
+.women-deals .deals img:hover,
+.women-westernwear .western-wear img:hover,
+.women-indianwear .indian-wear img:hover,
+.women-sportswear .sportwear img:hover,
+.women-accessories .accessories img:hover,
+.women-categories .categories img:hover{
+  transform: scale(1.05);
+  transition: all 0.3s ease ;
+  cursor: pointer;
+}
+.women-categories,
+.women-indianwear,
+.women-westernwear,
+.women-sportswear,
+.women-accessories,
+.women-deals {
+  text-align: center;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+
+/*KIDS*/
+.kids-deals .text-banner-title {
+  border-bottom: 1px solid #3e4152;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.kids-deals .text-banner-title {
+  text-transform: uppercase;
+  color: #3e4152;
+  letter-spacing: .15em;
+  font-size: 1.8em;
+  margin: 50px 0 10px 30px;
+  max-height: 5em;
+  font-weight: 700;
+}
+.kids-deals .deals img {
+  padding-left: 20px;
+  margin: 5px;
+}
+.kids-deals {
+  text-align: center;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+/*FOOTER*/
+.footer {
+  width: 100%;
+  border-top: 1px solid #454d5e;
+}
+.footer .footer-logo p{
+  text-align: center;
+  color: #000;
+  font-size: 25px;
+  font-weight: 600;
+  padding: 10px;
+}
+.footer .footer-logo span{
+  justify-content: space-between;
+  color: #000;
+  font-size: 25px;
+  font-weight: 600;
+  padding: 10px;
+}
+.footer .footer-logo p span{
+    color: #999;
+    transition: all 0.3s ease;
+}
+.footer .footer-logo-text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.footer .footer-logo-text p span{
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+  color: #000;
+  font-size: 20px;
+  font-weight: 100;
+}
+.footer .footer-logo-text p{
+  font-family: Segoe UI;
+  display:inline-block;
+  color: #333;
+  font-size: 18px;
+  padding: 20px;
+}
+.footer-container {
+  border-top: 1px solid #454d5e;
+  padding: 10px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+/* MEDIA QUERY FOR RESPONSIVENESS */
+@media only screen and (max-width: 1024px) {
+  .blockbuster-offer .offer img{
+    width: 440px;
+    height: 280px;
+  }
+  .deals img {
+    width: 300px;
+    height: 450px;
+  }
+  .categories img{
+    width: 246px;
+    height: 292px;
+  }
+  .indian-wear img {
+    width: 300px;
+    height: 400px;
+  }
+  .western-wear img {
+    width: 300px;
+    height: 400px;
+  }
+  .sportwear img {
+    width: 300px;
+    height: 400px;
+  }
+  .footwear img {
+    width: 300px;
+    height: 400px;
+  }
+  .accessories img {
+    width: 300px;
+    height: 400px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .menu-btn{
+      display: block;
+      z-index: 999;
+      margin-right: 40px;
+  }
+  .menu-btn img.active:before{
+      content: "\f00d";
+  }
+  .navbar .menu{
+      position: fixed;
+      height: 100vh;
+      width: 100%;
+      left: -100%;
+      top: 0;
+      background: #fff;
+      text-align: center;
+      padding-top: 80px;
+      transition: all 0.3s ease;
+  }
+  .navbar .menu.active{
+      left: 0;
+  }
+  .navbar .menu li{ 
+    display: block;
+  }
+  .navbar .menu li a{
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 25px;
+  }
+  .blockbuster-offer .offer img{
+    width: 340px;
+    height: 220px;
+  }
+  .global-brands .brands img{
+    width: 236px;
+    height: 328px;
+  }
+  .deals img {
+    width: 200px;
+    height: 300px;
+  }
+  .categories img {
+    width: 216px;
+    height: 242px;
+  }
+  .indian-wear img {
+    width: 200px;
+    height: 300px;
+  }
+  .western-wear img {
+    width: 200px;
+    height: 300px;
+  }
+  .sportwear img {
+    width: 200px;
+    height: 300px;
+  }
+  .footwear img {
+    width: 200px;
+    height: 300px;
+  }
+  .accessories img {
+    width: 200px;
+    height: 300px;
+  }
+  .footer .footer-logo p{
+    font-size: 20px;
+  }
+  .footer .footer-logo span{
+    font-size: 20px;
+  }
+  .footer .footer-logo-text p span{
+    font-size: 15px;
+  }
+  .footer .footer-logo-text p{
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .global-brands .brands img {
+    margin-left: 5px;
+    width: 190px;
+    height: 260px;
+  }
+  .deals img {
+    width: 150px;
+    height: 230px;
+  }
+  .categories img {
+    width: 166px;
+    height: 192px;
+  }
+  .western-wear img {
+    width: 150px;
+    height: 200px;
+  }
+  .indian-wear img {
+    width: 150px;
+    height: 200px;
+  }
+  .sportwear img {
+    width: 150px;
+    height: 200px;
+  }
+  .footwear img {
+    width: 150px;
+    height: 200px;
+  }
+  .accessories img {
+    width: 150px;
+    height: 200px;
+  }
+  .footer .footer-logo p{
+    font-size: 15px;
+  }
+  .footer .footer-logo span{
+    font-size: 15px;
+  }
+  .footer .footer-logo-text p span{
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .global-brands .brands img {
+    margin-left: 10px;
+    width: 160px;
+    height: 220px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .global-brands {
+    margin-left: 60px;
+  }
+  .categories img {
+    width: 116px;
+    height: 142px;
+  }
+  .deals img {
+    width: 100px;
+    height: 150px;
+  }
+  .western-wear img {
+    width: 100px;
+    height: 150px;
+  }
+  .indian-wear img {
+    width: 100px;
+    height: 150px;
+  }
+  .sportwear img {
+    width: 100px;
+    height: 150px;
+  }
+  .footwear img {
+    width: 100px;
+    height: 150px;
+  }
+  .accessories img {
+    width: 100px;
+    height: 150px;
+  }
+  .footer .footer-logo p{
+    font-size: 15px;
+  }
+  .footer .footer-logo span{
+    font-size: 15px;
+  }
+  .footer .footer-logo-text p span{
+    font-size: 15px;
+  }
+}
