@@ -23,3 +23,17 @@ $('.menu-btn').click(function(){
   $('.navbar .menu').toggleClass("active");
   $('.menu-btn i').toggleClass("active");
 });
+
+// night mode
+$('.night-mode').click(function(){
+  $('body').toggleClass('night-mode');
+  $('navbar').toggleClass('night-mode');
+  $('footer').toggleClass('night-mode');
+  
+  // change img in night mode
+  var sun = $('body').hasClass('night-mode') ? 'assests/Main-Page/Navbar/sun-regular.svg' : 'assests/Main-Page/Navbar/moon-solid.svg';
+  $('#nightModeImage').attr('src', sun);
+  var profile = $('body').hasClass('night-mode') ? 'assests/Main-Page/Navbar/user-solid-night-mode.svg' : 'assests/Main-Page/Navbar/user-solid.svg';
+  $('#userImage').attr('src', profile);
+  
+});
