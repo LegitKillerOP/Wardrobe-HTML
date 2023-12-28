@@ -33,9 +33,22 @@
         </div>
     </nav>
 
-    <section class="profile">
-        <div class="user-profile">
-            
+    <section class="your-profile">
+        <div class="text-banner-container">
+            <h4 class="text-banner-title">YOUR PROFILE</h4>
+        </div>
+        <div class="login-section">
+            <div class="profile-img">
+                <img id="profile-img" src="assests/Main-Page/Navbar/user-solid.svg" height="120" width="70" draggable="false">
+            </div>
+            <div class="user-name">
+                <h1>User</h1>
+            </div>
+            <div class="login">
+                <a href="login.html"><button class="login-btn">Login</button></a>
+                <a href="signup.html"><button class="sign-up-btn">Sign Up</button></a>
+            </div>
+            <p>Login or Sign up to see your account options!</p>
         </div>
     </section>
 
@@ -59,7 +72,8 @@
             $('body').toggleClass('night-mode');
             $('navbar').toggleClass('night-mode');
             $('footer').toggleClass('night-mode');
-            
+            $('your-profile').toggleClass('night-mode');
+
             // change img in night mode
             var sun = $('body').hasClass('night-mode') ? 'assests/Main-Page/Navbar/sun-regular.svg' : 'assests/Main-Page/Navbar/moon-solid.svg';
             $('#nightModeImage').attr('src', sun);
